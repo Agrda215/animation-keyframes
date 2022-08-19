@@ -1,0 +1,153 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+.whek {
+  background:#09F6BBF7;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  position:absolute;
+  animation:anim1 1s infinite;
+}
+
+@keyframes anim1 {
+  0% {
+    top:60px;
+  }
+  60% {
+    top:90px;
+  }
+  100% {
+    top:120px;
+  }
+}
+
+.whek:hover {
+  animation:anim2 1s infinite;
+}
+
+@keyframes anim2 {
+  0% {
+    background:#FF00FE;
+  }
+  30% {
+    background:#17E209;
+  }
+  60% {
+    background:#A24012;
+  }
+  90% {
+    background:#FF7217;
+  }
+  100% {
+    background:#808080;
+  }
+}
+
+h1 {
+  font-size:0.8pc;
+}
+
+#number {
+  color:hsl(190, 50%, 40%);
+  font-family:monospace;
+}
+
+.border {
+  border-style:solid;
+  animation:anim3 1s infinite;
+  width:180px;
+  height:120px;
+  position:absolute;
+  top:190px;
+  border-color:rgba(152, 139, 70, 0.9);
+}
+
+@keyframes anim3 {
+  0% {
+    border-width:5.5px;
+  }
+  5% {
+    border-width:5.75px;
+  }
+  10% {
+    border-width:6px;
+  }
+  15% {
+    border-width:6.25px;
+  }
+  20% {
+    border-width:6.45px;
+  }
+  25% {
+    border-width:6.5px;
+  }
+  30% {
+    border-width:6.66px;
+  }
+  35% {
+    border-width:6.75px;
+  }
+  40% {
+    border-width:7px;
+  }
+  45% {
+    border-width:7.25px;
+  }
+  50% {
+    border-width:7.5px;
+  }
+  55% {
+    border-width:7.75px;
+  }
+  60% {
+    border-width:7.95px;
+  }
+  65% {
+    border-width:8px;
+  }
+  70% {
+    border-width:8.45px;
+  }
+  75% {
+    border-width:8.85px;
+  }
+  80% {
+    border-width:9.05px;
+  }
+  85% {
+    border-width:9.25px;
+  }
+  90% {
+    border-width:9.45px;
+  }
+  95% {
+    border-width:9.75px;
+  }
+  100% {
+    border-width:10px;
+  }
+}
